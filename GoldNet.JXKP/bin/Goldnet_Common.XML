@@ -1,0 +1,2237 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoldNet.Comm</name>
+    </assembly>
+    <members>
+        <member name="T:GoldNet.Comm.Pic.Charting">
+            <summary>
+            Charting 的摘要说明
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Pic.Charting.CreateStatisticPic(dotnetCHARTING.Chart)">
+            <summary>
+            生成统计图片
+            </summary>
+            <param name="chart"></param>
+            <param name="type">图形类别,如柱状，折线型</param>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.PhaysicalImagePath">
+            
+            <summary>
+            图片存放路径
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.Title">
+            
+            <summary>
+            图片标题
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.XTitle">
+            
+            <summary>
+            图片x座标名称
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.YTitle">
+            
+            <summary>
+            图片y座标名称
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.SeriesName">
+            
+            <summary>
+            图例名称
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.PicWidth">
+            
+            <summary>
+            图片宽度
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.PicHight">
+            
+            <summary>
+            图片高度
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.Type">
+            <summary>
+            统计图类型(柱形,线形等)
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.Use3D">
+            <summary>
+            是否将输出的图片显示成三维
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.DataSource">
+            <summary>
+            对比图形数据源
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.Charting.FileName">
+            <summary>
+            生成统计图片的名称
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.BreakString">
+            <summary>
+            字符串分隔
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.BreakString.ShowText(System.String)">
+            <summary>
+            将字符串以逗号为分隔点进行分隔
+            </summary>
+            <param name="showString">要分隔的字符串</param>
+            <returns>数组</returns>
+        </member>
+        <member name="T:GoldNet.Comm.SystemMsg">
+            <summary>
+            系统提示信息公共类
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._db_user">
+             <summary>
+            DB用户登录名
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._user_id">
+             <summary>
+            用户编号(等同his里的emp_no)
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._user_name">
+             <summary>
+            用户姓名
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._user_dept">
+             <summary>
+            用户所属科室代码
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._user_deptname">
+             <summary>
+            用户所属科室名称
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._user_pswd">
+             <summary>
+            用户密码
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._job">
+             <summary>
+            用户职别
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._title">
+             <summary>
+            用户职称
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._login_date">
+             <summary>
+            用户登录日期
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._login_ip">
+             <summary>
+            用户IP地址
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._logincnt">
+             <summary>
+            用户登陆次数
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._powerdetail">
+             <summary>
+            用户详细权限
+             </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._DesktopSetting">
+            <summary>
+            桌面图片居中
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._DesktopColor">
+            <summary>
+            桌面背景颜色
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Users._DesktopImage">
+            <summary>
+            桌面背景图片
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.ExportData.ImagesXml">
+            <summary>
+            读取XML文件
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ImagesXml.InitXml">
+            <summary>
+            初始化XML
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ImagesXml.GetMsgFromXml">
+            <summary>
+            取得XML信息
+            </summary>
+            <returns>数据集</returns>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ImagesXml.HandleException(System.Exception,System.String)">
+            <summary>
+            写入日志文件
+            </summary>
+            <param name="ex">错误</param>
+            <param name="MethodName">方法名称</param>
+        </member>
+        <member name="T:GoldNet.Comm.ExportData.ImageGroup">
+            <summary>
+            数据映射
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Pic.ShowData.CreateColumn(dotnetCHARTING.Chart)">
+            
+            <summary>
+            柱形图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Pic.ShowData.CreatePie(dotnetCHARTING.Chart)">
+            
+            <summary>
+            饼图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Pic.ShowData.CreateLine(dotnetCHARTING.Chart)">
+            
+            <summary>
+            曲线图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.PhaysicalImagePath">
+            
+            <summary>
+            图片存放路径
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.Title">
+            
+            <summary>
+            图片标题
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.XTitle">
+            
+            <summary>
+            图片标题
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.YTitle">
+            
+            <summary>
+            图片标题
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.SeriesName">
+            
+            <summary>
+            图例名称
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.PicWidth">
+            
+            <summary>
+            图片宽度
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.PicHight">
+            
+            <summary>
+            图片高度
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Pic.ShowData.DataSource">
+            
+            <summary>
+            图片数据源
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.Oracle.forTrans">
+            <summary>
+            定义一个结构体，用来传递需要执行事务的参数
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.forTrans.comStr">
+            <summary>
+            命令字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.forTrans.paramList">
+            <summary>
+            命令的参数集合
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.Oracle.OracleOledbBase">
+            <summary>
+            OracleOledbBase 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.CONN_STRING_NON_DTC">
+            <summary>
+            hospitalsys连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ZLGL_CONN_STRING_NON_DTC">
+            <summary>
+            ZLGL连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.COMM_CONN_STRING_NON_DTC">
+            <summary>
+            COMM连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.Performance_CONN_STRING_NON_DTC">
+            <summary>
+            Performance连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.Hospitalconn">
+            <summary>
+            hospitalsys连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.Cbhsconn">
+            <summary>
+            cbhs连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.Zlglconn">
+            <summary>
+            zlgl连接字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.OracleOledbBase.Rlzyconn">
+            <summary>
+            rlzy连接字符串
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSet(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回一个DataSet对象的查询操作：Select
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSet(System.String,System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="tablename"></param>
+            <param name="connStr"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.Exists(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="strSql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.GetSingle(System.String)">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.GetSingle(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.GetSingle(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="SQLString"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSet(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回一个DataSet对象的查询操作：Select
+            </summary>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSetComm(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSet(System.String,System.String,System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+            <param name="tablename"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSetComm(System.String,System.String,System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+            <param name="tablename"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSet(System.String)">
+            <summary>
+            返回一个DataSet对象的查询操作：Select
+            </summary>
+            <param name="cmdText">要执行的 Select 语句</param>
+            <returns>满足条件的DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSetComm(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cmdText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSet(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tablename"></param>
+            <param name="cmdText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteDataSetComm(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tablename"></param>
+            <param name="cmdText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.PrepareCommand(System.Data.OleDb.OleDbCommand,System.Data.OleDb.OleDbConnection,System.Data.OleDb.OleDbTransaction,System.Data.CommandType,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            为OleDbCommand命令准备参数
+            </summary>
+            <param name="cmd">要执行的OleDbCommand命令对象</param>
+            <param name="conn">数据库连接对象</param>
+            <param name="trans">连接事务对象</param>
+            <param name="cmdType">连接类型：一般是Text(SQL)</param>
+            <param name="cmdText">命令字符串</param>
+            <param name="cmdParms">参数数组</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteReader(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回一个SqlDataReader对象的查询操作：Select
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的SqlDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteReader(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回一个SqlDataReader对象的查询操作：Select
+            </summary>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的SqlDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteReaderComm(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteNonQuery(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            无返回值的数据库操作：Insert、Delete、Update；
+            </summary>
+            <param name="connStr">连接字符串</param>
+            <param name="cmdText">要执行的SQL语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>影响的行数</returns>
+            
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteNonQuery(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            无返回值的数据库操作：Insert、Delete、Update；
+            </summary>
+            <param name="cmdText">要执行的SQL语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteNonQueryComm(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteNonQuery(System.String)">
+            <summary>
+            无返回值的数据库操作：Insert、Delete、Update；
+            </summary>
+            <param name="cmdText">要执行的SQL语句</param>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteNonQuery(System.Data.OleDb.OleDbTransaction,System.Data.CommandType,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            支持事务处理的数据库操作,适用INSERT、DELETE、UPDATE语句
+            </summary>
+            <param name="trans">事务处理对象</param>
+            <param name="cmdType">命令对象类型</param>
+            <param name="cmdText">命令对象内容</param>
+            <param name="cmdParms">命令参数集合</param>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteScalar(System.Data.OleDb.OleDbTransaction,System.Data.CommandType,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="trans">事务处理对象</param>
+            <param name="cmdType">命令对象类型</param>
+            <param name="cmdText">要执行的SQL语句</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>返回的第一行第一列的值</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteScalar(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmdText">要执行的SQL语句</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>返回的第一行第一列的值</returns>
+            
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteScalar(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="cmdText">要执行的SQL语句</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>返回的第一行第一列的值</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteScalar(System.String)">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="cmdText">要执行的SQL语句</param>
+            <returns>返回的第一行第一列的值</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteTrans(System.String,GoldNet.Comm.DAL.Oracle.forTrans[])">
+            <summary>
+            调用事务来批处理多条命令.
+            
+            调用事务处理thetrans（）方法的事例
+            <code>
+            	string wn = "wn";
+            	string zxm = "zxm";
+            	forTrans[] theCmd = new forTrans [2];
+            	theCmd[0].comStr = "Insert into wn_test (w,n) VALUES (@w,@n)";
+            	theCmd[0].paramList = new System.Collections.ArrayList ();
+            	theCmd[0].paramList.Add(new OleDbParameter ("@w",wn));
+            	theCmd[0].paramList.Add(new OleDbParameter ("@n",zxm));
+            	
+            	theCmd[1].comStr = "Insert into wn_test (w,n) VALUES (@w,@n)";
+            	theCmd[1].paramList = new System.Collections.ArrayList ();
+            	theCmd[1].paramList.Add(new OleDbParameter ("@w",zxm));
+            	theCmd[1].paramList.Add(new OleDbParameter ("@n",wn));
+            	
+            	ExecuteTrans(theCmd);
+            </code>
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmd">要执行的命令数组</param>
+            <returns>是否成功执行</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteTrans(GoldNet.Comm.DAL.Oracle.forTrans[])">
+            <summary>
+            更新一个记录集到数据源
+            </summary>
+            <param name="cmd">要执行的命令数组</param>
+            <returns>r</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteSqlTranList(System.String,GoldNet.Comm.DAL.Oracle.MyLists)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的Parameter[]）</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ExecuteTranslist(GoldNet.Comm.DAL.Oracle.MyLists)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.ImportExcelToDataGrid(System.String,System.String)">
+            <summary>
+            导入Excel到DataGrid
+            </summary>
+            <param name="fileName">Excel文件名</param>
+            <param name="sheetName">表格名称</param>
+            <returns>返回DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.OracleOledbBase.FillTheTable(GoldNet.Comm.CollectionTable,System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            填充一个表集合类
+            </summary>
+            <param name="table">要填充的表格</param>
+            <param name="connStr">连接字符串</param>
+            <param name="cmdText">SQL语句</param>
+            <param name="cmdParms">SQL参数列表</param>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.Oracle.DbHelperOra">
+            <summary>
+            Copyright (C) 2004-2008  
+            数据访问基础类(基于Oracle)
+            可以用户可以修改满足自己项目的需要。
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.DbHelperOra.connectionString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.DbHelperOra.connectionStringcomm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.DbHelperOra.otherdeptcode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.Oracle.DbHelperOra.HOSPITAL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.GetMaxID(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="FieldName"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.GetMaxID(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.Exists(System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="strSql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteSql(System.String)">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteSqlTran(System.Collections.ArrayList)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">多条SQL语句</param>		
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteSql(System.String,System.String)">
+            <summary>
+            执行带一个存储过程参数的的SQL语句。
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <param name="content">参数内容,比如一个字段是格式复杂的文章，有特殊符号，可以通过这个方式添加</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.GetSingle(System.String)">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteReader(System.String)">
+            <summary>
+            执行查询语句，返回OracleDataReader
+            </summary>
+            <param name="strSQL">查询语句</param>
+            <returns>OracleDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.Query(System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteSql(System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteSqlTran(System.Collections.Hashtable)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的OracleParameter[]）</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.GetSingle(System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.ExecuteReader(System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            执行查询语句，返回OracleDataReader
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>OracleDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.Query(System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <param name="cmdParms">参数</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.RunProcedure(System.String,System.Data.IDataParameter[])">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>OracleDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.RunProcedure(System.String,System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="storedProcName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.RunProcedure(System.String,System.Data.IDataParameter[],System.String)">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="tableName">DataSet结果中的表名</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.BuildQueryCommand(System.Data.OracleClient.OracleConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            构建 OracleCommand 对象(用来返回一个结果集，而不是一个整数值)
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>OracleCommand</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.RunProcedure(System.String,System.Data.IDataParameter[],System.Int32@)">
+            <summary>
+            执行存储过程，返回影响的行数		
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="rowsAffected">影响的行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.DbHelperOra.BuildIntCommand(System.Data.OracleClient.OracleConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            创建OracleCommand 对象实例(用来返回一个整数值)	
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>OracleCommand 对象实例</returns>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.Oracle.MyLists">
+            <summary>
+            MyLists 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.MyLists.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.MyLists.Add(GoldNet.Comm.DAL.Oracle.List)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GoldNet.Comm.DAL.Oracle.MyLists.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.Oracle.List">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.List.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.Power.PowerInfo">
+            <summary>
+            功能对象
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Power.PowerInfo.GetPowerNameByKey(System.String)">
+            <summary>
+            获得指定功能号的功能名称
+            </summary>
+            <param name="powerId">功能编号</param>
+            <returns>返回指定功能号的功能名称</returns>
+        </member>
+        <member name="T:GoldNet.Comm.Power.ViewPower">
+            <summary>
+            浏览权限
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.Power.StaffCollection">
+            <summary>
+            人员对象信息集合
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Power.StaffCollection.Add(GoldNet.Comm.Users)">
+            <summary>
+            添加对象到集合中
+            </summary>
+            <param name="staffinfo">要添加人员的对象</param>
+        </member>
+        <member name="P:GoldNet.Comm.Power.StaffCollection.Item(System.Int32)">
+             <summary>
+            根据索引号返回集合中的人员对象
+             </summary>
+        </member>
+        <member name="T:GoldNet.Comm.Power.PowerCollection">
+            <summary>
+            添加功能对象集合
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Power.PowerCollection.Add(GoldNet.Comm.Power.PowerInfo)">
+            <summary>
+            添加对象到集合中
+            </summary>
+            <param name="powerinfo">要添加的功能对象</param>
+        </member>
+        <member name="P:GoldNet.Comm.Power.PowerCollection.Item(System.Int32)">
+             <summary>
+            根据索引号返回集合中的功能对象
+             </summary>
+        </member>
+        <member name="T:GoldNet.Comm.Power.Power">
+            <summary>
+            权限功能相关类
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.CheckPower(GoldNet.Comm.Users,System.String[])">
+            <summary>
+            判断一个人是否有多个功能的权限
+            </summary>
+            <param name="staff"></param>
+            <param name="funcKeysStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.IsExitPower(System.String,System.String)">
+            <summary>
+            判断人员是否具有指定权限
+            </summary>
+            <param name="staffId">人员编号</param>
+            <param name="powerId">权限编号</param>
+            <returns>如果存在权限返回TRUE,否则返回FALSE</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetAllPower">
+            <summary>
+            获得所有功能信息
+            </summary>
+            <returns>返回所有功能信息</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetViewPower(System.String)">
+            <summary>
+            获得指定功能的浏览权限
+            </summary>
+            <param name="powerId">功能编号</param>
+            <returns>1-浏览本科，2-浏览全院,0-未设置</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetAllfunctionByStaffById(System.String)">
+            <summary>
+            获得权限编码
+            </summary>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.AddPower(System.String,GoldNet.Comm.Power.StaffCollection)">
+            <summary>
+            添加人员功能
+            </summary>
+            <param name="powerId">功能序号</param>
+            <param name="staffs">人员集合</param>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.AddPowerNew(System.String[],GoldNet.Comm.Users)">
+            <summary>
+            添加人员功能
+            </summary>
+            <param name="powers"></param>
+            <param name="staffs"></param>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.DelPower(System.String)">
+            <summary>
+            添加人员功能
+            </summary>
+            <param name="staffId">人员序号</param>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetAllStaffByPowerId(System.String)">
+            <summary>
+            获得具有指定功能的人员集合
+            </summary>
+            <param name="powerId">功能序号</param>
+            <returns>返回具有指定功能的人员集合</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetPowerbystaffid(System.String)">
+            <summary>
+            获取人员的权限功能
+            </summary>
+            <param name="staffid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetAllPowerByStaffById(System.String)">
+            <summary>
+            获得指定人员具有的功能的集合
+            </summary>
+            <param name="staffId">人员序号</param>
+            <returns>返回具有指定人员具有的功能的集合</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.SetViewPower(System.String,System.String)">
+            <summary>
+            设置浏览权限信息
+            </summary>
+            <param name="powerId">功能编号</param>
+            <param name="viewPower">浏览权限1--本科，2-全院</param>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetDeptType">
+            <summary>
+            取科室类别
+            </summary>
+            <returns>返回相应的结果集dataset</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetDeptByType(System.String)">
+            <summary>
+            取科室信息
+            </summary>
+            <param name="type">类别/上级科室代码</param>
+            <returns>返回相应的结果集dataset,科室代码为dept_code</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetStateStionBydept(System.String,System.String)">
+            <summary>
+            取岗位信息
+            </summary>
+            <param name="deptcode">科室代码</param>
+            <param name="year">岗位年度</param>
+            <returns>返回相应的结果集dataset</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetStatePersonByStion(System.String,System.String)">
+            <summary>
+            取岗位下的职员信息
+            </summary>
+            <param name="stationcode">岗位代码</param>
+            <param name="year">岗位年度</param>
+            <returns>返回相应的结果集dataset</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetStationByDeptcode(System.String,System.String,System.String)">
+            <summary>
+            根据科室查找岗位
+            </summary>
+            <param name="deptcode">科室代码</param>
+            <param name="duty">DUTY</param>
+            <param name="years">岗位年度</param>
+            <returns>岗位代码编码</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetStationBystaffid(System.String,System.String)">
+            <summary>
+            根据职员ID staffid查找岗位
+            </summary>
+            <param name="staffid">职员ID</param>
+            <param name="years">岗位年度</param>
+            <returns>岗位代码编码</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetStaffInfoByuserid(System.String)">
+            <summary>
+            根据用户ID 查找用户的职员信息
+            </summary>
+            <param name="user_id">USER_ID(EMP_NO)</param>
+            <returns>返回当前年度相应的结果集dataset</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetTrendLine(System.String,System.String,System.String)">
+            <summary>
+            指标月趋势
+            </summary>
+            <param name="guidecode"></param>
+            <param name="datetime"></param>
+            <param name="unitcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetNextGuides(System.String,System.String@)">
+            <summary>
+            下级指标
+            </summary>
+            <param name="guidid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetGuides(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            指标查询
+            </summary>
+            <param name="deptcode"></param>
+            <param name="stationcode"></param>
+            <param name="personid"></param>
+            <param name="years"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetGuides(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            指标查询
+            </summary>
+            <param name="deptcode"></param>
+            <param name="stationcode"></param>
+            <param name="personid"></param>
+            <param name="guidcode"></param>
+            <param name="year"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetYesterdayinfo(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetMZL(System.String,System.String)">
+            <summary>
+            门诊量
+            </summary>
+            <param name="deptcode"></param>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetZYL(System.String,System.String)">
+            <summary>
+            住院量
+            </summary>
+            <param name="deptcode"></param>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetSSL(System.String,System.String)">
+            <summary>
+            手术量
+            </summary>
+            <param name="deptcode"></param>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Power.Power.GetYLFY(System.String,System.String)">
+            <summary>
+            医疗费用
+            </summary>
+            <param name="deptcode"></param>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GoldNet.Comm.Pic.GuagePic">
+            <summary>
+            GuagePic 的摘要说明
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ExportData.DataTableConvertToJson(System.Data.DataTable)">
+            <summary>
+            DataTable转化成Json
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ExportData.ExportDataTableExcel(System.Web.UI.Page,System.Xml.XmlNode,System.String)">
+            <summary>
+            生成Excel文件并且下载
+            </summary>
+            <param name="webpage">要导出数据的页面</param>
+            <param name="xml">序列化过得TableData</param>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ExportData.ExportDataTableXML(System.Web.UI.Page,System.Xml.XmlNode,System.String)">
+            <summary>
+            生成XML文件并且下载
+            </summary>
+            <param name="webpage">要导出数据的页面</param>
+            <param name="xml">序列化过得TableData</param>
+        </member>
+        <member name="M:GoldNet.Comm.ExportData.ExportData.ExportDataTableCSV(System.Web.UI.Page,System.Xml.XmlNode,System.String)">
+            <summary>
+            生成CSV文件并且下载
+            </summary>
+            <param name="webpage">要导出数据的页面</param>
+            <param name="xml">序列化过得TableData</param>
+        </member>
+        <member name="T:GoldNet.Comm.CollectionTable">
+            <summary>
+            集合类
+            继承DataTable并能实现枚举的基类
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.CollectionTable._position">
+            <summary>
+            存储当前的位置信息。
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.CollectionTable.Reset">
+            <summary>
+            接口方法：重置
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.CollectionTable.MoveNext">
+            <summary>
+            接口方法：移动到下一位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.CollectionTable.GetEnumerator">
+            <summary>
+            返回一个枚举对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GoldNet.Comm.CollectionTable.Current">
+            <summary>
+            接口方法：当前值
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.CollectionTable.Item(System.Int32)">
+            <summary>
+            要实现的索引器
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.GlobalException">
+            <summary>
+            全局通用异常类
+            包含错误标题和错误内容
+            
+            扩展：
+              应考虑保留引发异常的类名或文件名等。目前可以把此信息包含在content中。
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.GlobalException.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="title">异常的标题</param>
+            <param name="content">异常的详细内容</param>
+        </member>
+        <member name="M:GoldNet.Comm.GlobalException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="title">异常标题</param>
+            <param name="content">异常的详细内容</param>
+            <param name="innerException">引发异常的子异常</param>
+        </member>
+        <member name="P:GoldNet.Comm.GlobalException.Title">
+            <summary>
+            返回异常的标题信息
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.GlobalException.Content">
+            <summary>
+            返回异常的详细内容
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.GlobalException.Message">
+            <summary>
+            重写了Exception的Message属性。
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.GlobalException.InnerException">
+            <summary>
+            返回引发异常的子异常
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.FilterStrFactoryHandler.IsReusable">
+            <summary>
+            获取一个值，该值指示其他请求是否可以使用 IHttpHandler 实例。
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.Encrypt">
+            <summary>
+            加密解密字符串类
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Encrypt.skey">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Encrypt.encryptStr">
+            <summary>
+            需要加密的字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.Encrypt.unEncryptStr">
+            <summary>
+            需要解密的字符串
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="theKey">密钥参数</param>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.EncryptTheStr">
+            <summary>
+            根据属性加密
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.EncryptTheStr(System.String)">
+            <summary>
+            根据参数加密参数字符串（从属性获得密钥）
+            </summary>
+            <param name="encryptStr">要加密的字符串</param>
+            <returns>已加密的字符串</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.EncryptTheStr(System.String,System.String)">
+            <summary>
+            根据密钥和需要加密的字符串2个参数加密
+            </summary>
+            <param name="theKey">key</param>
+            <param name="encryptStr">要加密的字符串</param>
+            <returns>已加密的字符串</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.EncryptMyStr(System.String,System.String)">
+            <summary>
+            利用密钥直接根据参数加密，不用实例化类
+            </summary>
+            <param name="myKey">key</param>
+            <param name="encryptStr">要加密的字符串</param>
+            <returns>已加密的字符串</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.UnEncryptTheStr">
+            <summary>
+            根据属性解密
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.UnEncryptTheStr(System.String)">
+            <summary>
+            根据参数解密参数字符串（从属性获得密钥）
+            </summary>
+            <param name="encryptStr">要解密的字符串</param>
+            <returns>已解密的字符串</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.UnEncryptTheStr(System.String,System.String)">
+            <summary>
+            根据参数解密参数字符串
+            </summary>
+            <param name="theKey">key</param>
+            <param name="encryptStr">要解密的字符串</param>
+            <returns>已解密的字符串</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Encrypt.UnEncryptMyStr(System.String,System.String)">
+            <summary>
+            利用密钥直接根据参数解密，不用实例化类
+            </summary>
+            <param name="theKey">key</param>
+            <param name="encryptStr">要解密的字符串</param>
+            <returns>已解密的字符串</returns>
+        </member>
+        <member name="P:GoldNet.Comm.Encrypt.Skey">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Encrypt.EncryptStr">
+            <summary>
+            要加密的字符串
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.Encrypt.UnEncryptStr">
+            <summary>
+            要解密的字符串
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.SqlServer.ConditionType">
+            <summary>
+            一个查询条件的类型
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.ConditionType.Equal">
+            <summary>
+            相等
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.ConditionType.GreatThan">
+            <summary>
+            大于等于
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.ConditionType.LessThan">
+            <summary>
+            小于等于
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.ConditionType.Between">
+            <summary>
+            在两者之间
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.ConditionType.Include">
+            <summary>
+            包含，SQL中的 '%XXX%'
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.ConditionType.In">
+            <summary>
+            枚举，SQL中的 IN
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.SqlServer.Condition">
+            <summary>
+            查询条件集类，此类负责依据添加的条件生成一个多个条件的查询语句。
+            此语句由一个WHERE语句模板和相应一个SqlParameter[]数组
+            可以传递此WHERE语句模板和SqlParameter[]数组到<see cref="T:GoldNet.Comm.DAL.SqlServer.DALBase">DALBase</see>对象
+            <seealso cref="T:GoldNet.Comm.DAL.SqlServer.DALBase">DALBase</seealso>
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.Condition.Add(System.String,GoldNet.Comm.DAL.SqlServer.ConditionType,System.Object[])">
+            <summary>
+            添加一个条件
+            </summary>
+            <example>
+            以下方法返回满足"SELECT * FROM Tab WHERE (IsDeleted = 0)"的记录集
+            <code>
+            // 建立一个条件对象 
+            Condition cond = new Condition();
+            
+            // 添加一个 IsDeleted = 0 的条件
+            cond.Add("IsDeleted", ConditionType.Equal, 0);	
+            sql = "SELECT * FROM Tab ";
+            sql += "WHERE ";
+            
+            //添加条件语句模板
+            sql += cond.GetWhereString;	
+            
+            // 开始查询
+            DALBase.ExecuteDataSet(sql, c1.GetParams);	 
+            </code>
+            </example>
+            <param name="fieldName">要查询的字段名称</param>
+            <param name="type">条件类型</param>
+            <param name="values">备选值</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.Condition.Add(System.Boolean,System.String,GoldNet.Comm.DAL.SqlServer.ConditionType,System.Object[])">
+            <summary>
+            添加一个条件
+            </summary>
+            <example>
+            <code>
+            // 建立一个条件对象
+            Condition cond = new Condition();
+            
+            // 添加一个 IsDeleted = 0 的条件
+            cond.Add("IsDeleted", ConditionType.Equal, 0);	
+            cond.Add
+            sql = "SELECT * FROM tab1 ";
+            sql += "WHERE ";
+            
+            //添加条件语句模板
+            sql += cond.GetWhereString;	
+            
+            // 开始查询
+            DALBase.ExecuteDataSet(sql, c1.GetParams);	 
+            </code>
+            </example>
+            <param name="isor">是否使用OR连接</param>
+            <param name="fieldName">要查询的字段名称</param>
+            <param name="type">条件类型</param>
+            <param name="values">备选值</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.Condition.Add(GoldNet.Comm.DAL.SqlServer.Condition)">
+            <summary>
+            添加一个集合条件,默认使用 And 关系
+            </summary>
+            <param name="subCond">子条件集合</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.Condition.Add(System.Boolean,GoldNet.Comm.DAL.SqlServer.Condition)">
+            <summary>
+            添加一个集合条件
+            </summary>
+            <param name="isor">是否使用OR连接</param>
+            <param name="subCond">子条件集合</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.Condition.SetTagAdd(System.String)">
+            <summary>
+            为当前条件添加统一标志
+            </summary>
+            <param name="tag">标志字符</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.Condition.GetItemCount(System.Collections.ArrayList,System.Object)">
+            <summary>
+            得到ArrayList中某个值的个数.
+            </summary>
+            <param name="li">一个ArrayList</param>
+            <param name="obj">要查找的object</param>
+            <returns>此object在ArrayList中的个数</returns>
+        </member>
+        <member name="P:GoldNet.Comm.DAL.SqlServer.Condition.GetWhereString">
+            <summary>
+            返回查询语句的WHERE模板
+            </summary>
+        </member>
+        <member name="P:GoldNet.Comm.DAL.SqlServer.Condition.GetParams">
+            <summary>
+            返回此条件使用的 SqlParameter[] 数组 
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.SqlServer.forTrans">
+            <summary>
+            定义一个结构体，用来传递需要执行事务的参数
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.forTrans.comStr">
+            <summary>
+            命令字符串
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.forTrans.paramList">
+            <summary>
+            命令的参数集合
+            </summary>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.SqlServer.DALBase">
+            <summary>
+            通用数据访问类
+            包含对数据库访问的基本方法
+            虚拟类，不能实例化，不要继承此类
+            </summary>
+        </member>
+        <member name="F:GoldNet.Comm.DAL.SqlServer.DALBase.CONN_STRING_NON_DTC">
+            <summary>
+            只读数据库连接字符串：以后改为配置文件设置。
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteNonQuery(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            无返回值的数据库操作：Insert、Delete、Update；
+            </summary>
+            <param name="connStr">连接字符串</param>
+            <param name="cmdText">要执行的SQL语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>影响的行数</returns>
+            
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteNonQuery(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            无返回值的数据库操作：Insert、Delete、Update；
+            </summary>
+            <param name="cmdText">要执行的SQL语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteNonQuery(System.String)">
+            <summary>
+            无返回值的数据库操作：Insert、Delete、Update；
+            </summary>
+            <param name="cmdText">要执行的SQL语句</param>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            支持事务处理的数据库操作,适用INSERT、DELETE、UPDATE语句
+            </summary>
+            <param name="trans">事务处理对象</param>
+            <param name="cmdType">命令对象类型</param>
+            <param name="cmdText">命令对象内容</param>
+            <param name="cmdParms">命令参数集合</param>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="trans">事务处理对象</param>
+            <param name="cmdType">命令对象类型</param>
+            <param name="cmdText">要执行的SQL语句</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>返回的第一行第一列的值</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteScalar(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmdText">要执行的SQL语句</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>返回的第一行第一列的值</returns>
+            
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteScalar(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="cmdText">要执行的SQL语句</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>返回的第一行第一列的值</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteScalar(System.String)">
+            <summary>
+            返回单值的数据库操作
+            </summary>
+            <param name="cmdText">要执行的SQL语句</param>
+            <returns>返回的第一行第一列的值</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteDataSet(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个DataSet对象的查询操作：Select
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteDataSet(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个DataSet对象的查询操作：Select
+            </summary>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteDataSet(System.String)">
+            <summary>
+            返回一个DataSet对象的查询操作：Select
+            </summary>
+            <param name="cmdText">要执行的 Select 语句</param>
+            <returns>满足条件的DataSet</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteReader(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个SqlDataReader对象的查询操作：Select
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的SqlDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteReader(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个SqlDataReader对象的查询操作：Select
+            </summary>
+            <param name="cmdText">要执行的 Select 语句模板（带参数）</param>
+            <param name="cmdParms">此SQL语句的参数</param>
+            <returns>满足条件的SqlDataReader</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            为SqlCommand命令准备参数
+            </summary>
+            <param name="cmd">要执行的SqlCommand命令对象</param>
+            <param name="conn">数据库连接对象</param>
+            <param name="trans">连接事务对象</param>
+            <param name="cmdType">连接类型：一般是Text(SQL)</param>
+            <param name="cmdText">命令字符串</param>
+            <param name="cmdParms">参数数组</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.UpdataDataSet(System.String,System.Data.DataSet,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            更新一个记录集到数据源
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="newDS">要更新的记录集</param>
+            <param name="cmdText">取得记录集的命令</param>
+            <param name="cmdParms">取得记录集的参数</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.UpdataDataSet(System.Data.DataSet,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            更新一个记录集到数据源
+            </summary>
+            <param name="newDS">要更新的记录集</param>
+            <param name="cmdText">取得记录集的命令</param>
+            <param name="cmdParms">取得记录集的参数</param>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteTrans(System.String,GoldNet.Comm.DAL.SqlServer.forTrans[])">
+            <summary>
+            调用事务来批处理多条命令.
+            
+            调用事务处理thetrans（）方法的事例
+            <code>
+            	string wn = "wn";
+            	string zxm = "zxm";
+            	forTrans[] theCmd = new forTrans [2];
+            	theCmd[0].comStr = "Insert into wn_test (w,n) VALUES (@w,@n)";
+            	theCmd[0].paramList = new System.Collections.ArrayList ();
+            	theCmd[0].paramList.Add(new SqlParameter ("@w",wn));
+            	theCmd[0].paramList.Add(new SqlParameter ("@n",zxm));
+            	
+            	theCmd[1].comStr = "Insert into wn_test (w,n) VALUES (@w,@n)";
+            	theCmd[1].paramList = new System.Collections.ArrayList ();
+            	theCmd[1].paramList.Add(new SqlParameter ("@w",zxm));
+            	theCmd[1].paramList.Add(new SqlParameter ("@n",wn));
+            	
+            	ExecuteTrans(theCmd);
+            </code>
+            </summary>
+            <param name="connStr">数据库连接字符串</param>
+            <param name="cmd">要执行的命令数组</param>
+            <returns>是否成功执行</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.ExecuteTrans(GoldNet.Comm.DAL.SqlServer.forTrans[])">
+            <summary>
+            更新一个记录集到数据源
+            </summary>
+            <param name="cmd">要执行的命令数组</param>
+            <returns>r</returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.SqlServer.DALBase.FillTheTable(GoldNet.Comm.CollectionTable,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            填充一个表集合类
+            </summary>
+            <param name="table">要填充的表格</param>
+            <param name="connStr">连接字符串</param>
+            <param name="cmdText">SQL语句</param>
+            <param name="cmdParms">SQL参数列表</param>
+        </member>
+        <member name="T:GoldNet.Comm.DAL.Oracle.COMM">
+            <summary>
+            COMM 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_inputitem_code_by_name(System.String)">
+            <summary>
+            根据收入项目名称得到项目code
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_inputitem_name_by_code(System.String)">
+            <summary>
+            根据收入项目CODE得到项目NAME
+            </summary>
+            <param name="itemcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_costitem_code_by_name(System.String)">
+            <summary>
+            根据成本项目名称得到code
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_account_dept_by_dept_code(System.String)">
+            <summary>
+            根据科室得到核算科室
+            </summary>
+            <param name="deptcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_costitem_name_by_code(System.String)">
+            <summary>
+            根据成本code得到成本名称
+            </summary>
+            <param name="itemcost"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_dept_code_by_dept_name(System.String)">
+            <summary>
+            根据科室名称得到科室code
+            </summary>
+            <param name="deptname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_dept_name_by_dept_code(System.String)">
+            <summary>
+            根据科室CODE得到科室名称
+            </summary>
+            <param name="deptcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_incom_type_by_incom_code(System.String)">
+            <summary>
+            根据收入类别名称得到收入类别code
+            </summary>
+            <param name="incomcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_cost_type_by_cost_code(System.String)">
+            <summary>
+            根据成本类别名称得到成本类别code
+            </summary>
+            <param name="costcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_allot_code_by_name(System.String)">
+            <summary>
+            根据分解方案名称查code
+            </summary>
+            <param name="allotname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_allot_name_by_code(System.String)">
+            <summary>
+            根据分解方案CODE查NAME
+            </summary>
+            <param name="allotcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_cost_code_by_incom_code(System.String)">
+            <summary>
+            根据成本code查收入code
+            </summary>
+            <param name="incomcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_staff_name_by_staff_code(System.String)">
+            <summary>
+            根据人员id查人员姓名
+            </summary>
+            <param name="staffcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.DAL.Oracle.COMM.get_staff_name_by_db_user(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="staffcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Loggers.WriteExLog(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            写入异常信息日志
+            </summary>
+            <param name="messageInfo">错误信息</param>
+            <param name="nameSpc">命名空间</param>
+            <param name="className">类名</param>
+            <param name="method">方法名</param>
+            <param name="ipstr">IP</param>
+        </member>
+        <member name="M:GoldNet.Comm.Loggers.WriteUserLog(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            写入用户操作日志
+            </summary>
+            <param name="messageInfo">日志信息</param>
+            <param name="title">标题</param>
+            <param name="oper">操作者</param>
+            <param name="opurl">请求url</param>
+            <param name="opip">IP</param>
+            <param name="err_f">错误系标志</param>
+        </member>
+        <member name="M:GoldNet.Comm.FileFolder.CheckFileFolder(System.String,System.Web.UI.Page)">
+            <summary>
+            创建文件夹
+            </summary>
+            <param name="fileFolderName">文件夹名</param>
+            <param name="page">页面</param>
+        </member>
+        <member name="M:GoldNet.Comm.FileFolder.FileCopyAndDelete(System.String,System.String)">
+            <summary>
+            文件转移
+            </summary>
+            <param name="tempFilePath">被复制的文件</param>
+            <param name="copytoFilePath">要复制的文件</param>
+            <returns></returns>
+        </member>
+        <member name="T:GoldNet.Comm.CleanString">
+            <summary>
+            通用字符转换
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.CleanString.InputText(System.String,System.Int32)">
+            <summary>
+            转换输入字符到Web字符。包括：" 、&lt;、&gt;、'等
+            </summary>
+            <param name="inputString">要转换的字符串</param>
+            <param name="maxLength">字符的最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.CleanString.getstring(System.String)">
+            <summary>
+            去掉字符串中的空格
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.CleanString.GetMonDayByDate(System.DateTime)">
+            <summary>
+            获得一天所在周的周一的日期
+            </summary>
+            <param name="date">日期</param>
+            <returns>返回一天所在周的周一的日期</returns>
+        </member>
+        <member name="M:GoldNet.Comm.CleanString.GetNowMonthFirstDay">
+            <summary>
+            获得系统当前日期的月份第一天
+            </summary>
+            <returns>返回系统当前日期的月份第一天</returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.Getdept(System.String,System.String)">
+            <summary>
+            科室查询
+            </summary>
+            <param name="deptlevels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideGroupList(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideGroup(System.String,System.String,System.String,System.String)">
+            <summary>
+            查询指标集
+            </summary>
+            <param name="attr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDeptBydepttype(System.String,System.String)">
+            <summary>
+            根据科室类型查询科室
+            </summary>
+            <param name="depttype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDiseaseDept(System.String)">
+            <summary>
+            疾病科室
+            </summary>
+            <param name="diseasetype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDiseasebydept(System.String,System.String)">
+            <summary>
+            疾病列表
+            </summary>
+            <param name="diseasetype"></param>
+            <param name="deptcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDideaseInhospital(System.String,System.String)">
+            <summary>
+            疾病住院列表
+            </summary>
+            <param name="diseasetype"></param>
+            <param name="diseasename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDisdeaseInhospitaldates(System.String,System.String)">
+            <summary>
+            疾病住院天数
+            </summary>
+            <param name="diseasename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideDept">
+            <summary>
+            指标集科室分类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideBSC">
+            <summary>
+            指标集BSC分类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideByGathers(System.String)">
+            <summary>
+            根据指标集code查询指标
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideByBsc(System.String,System.String)">
+            <summary>
+            根据bsc查询指标
+            </summary>
+            <param name="bsccode"></param>
+            <param name="organ"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideByDepttype(System.String,System.String)">
+            <summary>
+            根据科室类型查询指标
+            </summary>
+            <param name="depttype"></param>
+            <param name="organ"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetHighGuide(System.String)">
+            <summary>
+            是否是高优指标
+            </summary>
+            <param name="guidecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetABSGuide(System.String)">
+             <summary>
+            是否是绝对值
+             </summary>
+             <param name="guidecode"></param>
+             <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetAppraisalByGuide(System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String)">
+            <summary>
+            根据指标得到评价值
+            </summary>
+            <param name="strdate"></param>
+            <param name="dateend"></param>
+            <param name="dept"></param>
+            <param name="guide"></param>
+            <param name="depttype"></param>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDeptInfo(System.Collections.ArrayList,System.String)">
+            <summary>
+            提取科室信息
+            </summary>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetPersonInfo(System.Collections.ArrayList,System.String,System.String)">
+            <summary>
+            (人员信息)
+            </summary>
+            <param name="persons"></param>
+            <param name="years"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetPersons(System.String)">
+            <summary>
+            根据条件查询人员
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetEvalutetype(System.String)">
+            <summary>
+            评价分类
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetAppraisalList(System.String)">
+            <summary>
+            查询评价
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetEvaluateDetail(System.String)">
+            <summary>
+            查询评价详细
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.UpdateApprailsalist(System.String)">
+            <summary>
+            归档评价
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.DelApprailsaList(System.String)">
+            <summary>
+            删除评价
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetStaffInfo(System.String)">
+            <summary>
+            得到人员信息
+            </summary>
+            <param name="staffid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideDictList(System.String,System.String,System.String,System.String)">
+            <summary>
+            指标列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetBSCOne">
+            <summary>
+            BSCone
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetBSTwo(System.String)">
+            <summary>
+            BSCtwo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDeptType">
+            <summary>
+            部门
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDeptAttr(System.String)">
+            <summary>
+            科室属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.Getorg">
+            <summary>
+            组织
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetStatons(System.String)">
+            <summary>
+            岗位
+            </summary>
+            <param name="stationtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetNextGuideCode(System.String)">
+            <summary>
+            下一个guidecode
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideByGuideCode(System.String)">
+            <summary>
+            查询指标byguidecode
+            </summary>
+            <param name="guidecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideExpressByGuideCode(System.String)">
+            <summary>
+            查询指标sql
+            </summary>
+            <param name="guidecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.SelectGuideExpress(System.String)">
+            <summary>
+            查询复合指标
+            </summary>
+            <param name="guidecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.CheckGuideSql(System.String,System.String)">
+            <summary>
+            检查指标sql
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.SetAllGuideValue(System.String)">
+            <summary>
+            生成全部指标
+            </summary>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetGuideByGuidename(System.String)">
+            <summary>
+            根据名称查询指标
+            </summary>
+            <param name="guidename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.DelGuide(System.String)">
+            <summary>
+            删除指标
+            </summary>
+            <param name="guidecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetPersSort(System.String)">
+            <summary>
+            人员类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetSaniSpecSort(System.String)">
+            <summary>
+            卫生专业分类
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetPersSpecSort(System.String)">
+            <summary>
+            从事专业
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDuty(System.String)">
+            <summary>
+            行政职务
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetJob(System.String)">
+            <summary>
+            技术职务
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetTechnicclass(System.String)">
+            <summary>
+            技术级
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetCivilserviceclass(System.String)">
+            <summary>
+            文职级
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetLearnsuffer(System.String)">
+            <summary>
+            学历
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDegree(System.String)">
+            <summary>
+            学位
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetTitlelist(System.String)">
+            <summary>
+            职称序列
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetTitle(System.String)">
+            <summary>
+            职称
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDeptAttribute(System.String)">
+            <summary>
+            科室属性
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDDLDuty">
+            <summary>
+            绑定行政职务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetDDLJob">
+            <summary>
+            技术职务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldNet.Comm.Appraisal.GetExtacLogByDate(System.String,System.String,System.String)">
+            <summary>
+            获取日志信息
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="begindate">开始时间</param>
+            <param name="enddate">结束时间</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

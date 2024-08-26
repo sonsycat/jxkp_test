@@ -1,0 +1,30 @@
+td { 
+    font-size: 12px;
+    color: #000000;
+    line-height: 150%;
+    }
+.sec1 { 
+    background-color: #EEEEEE;
+    cursor: hand;
+    color: #000000;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid #FFFFFF
+    }
+.sec2 { 
+    background-color: #83B0E2;
+    cursor: hand;
+    color: #000000;
+    border-left: 1px solid #FFFFFF; 
+    border-top: 1px solid #FFFFFF; 
+    border-right: 1px solid gray; 
+    font-weight: bold; 
+    }
+.main_tab {
+    background-color: #83B0E2;
+    color: #000000;
+    border-left:1px solid #FFFFFF;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray; 
+    }

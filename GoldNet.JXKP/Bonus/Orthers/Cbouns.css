@@ -1,0 +1,18 @@
+.x-grid3-row td, .x-grid3-summary-row td
+{
+	padding-right: 0px;
+	border-right: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+}
+/*去掉行间空白*/
+.x-grid3-row
+{
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+}
+
+/*去取Command列中控件的底线*/
+.x-grid3 .row-cmd-cell-ct TD
+{
+	border-bottom-width: 0px !important;
+}

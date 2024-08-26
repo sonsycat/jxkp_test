@@ -1,0 +1,99 @@
+﻿body {
+	font-family: 'lucida grande' ,tahoma,arial,sans-serif;
+	font-size: 12px;
+	margin:0;
+}
+a { color: #15428B; }
+a:link, a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+#header { 
+	background: #7F99BE url(../images/001.gif) repeat-x scroll center top;  
+	background-color: rgb(130, 169, 200);
+	height:65px;
+	width:100%
+
+}
+#logo{
+	width: 293px;
+}
+#menu{
+	width:648px;
+	right:0;
+	top:0;
+	position:absolute;
+	font-family:"微软雅黑";
+}
+#menu ul{
+	list-style:none;
+	float:right;
+	width:100%;
+	margin:0;
+	cursor:pointer;
+}
+#menu li{
+	list-style:none;
+	display:block;
+	float:right;
+}
+#menu li a{
+	display:block;
+	float:left;
+	height:29px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:bold;
+	background:url(/resources/images/menu_007_left.gif) no-repeat left;
+	line-height:26px;
+	padding:0 2px 0 7px;
+	cursor:pointer;
+	text-decoration:none;
+}
+#menu li a span{
+	display:block;
+	float:left;
+	background:url(/resources/images/menu_007_right.gif) no-repeat right;
+	height:29px;
+	color:#fff;
+	line-height:26px;
+	padding:0 14px 0 6px;
+	cursor:pointer;
+}
+#menu li a:hover{
+	display:block;
+	float:left;					
+	background:url(/resources/images/menu_007_left_h.gif) no-repeat left;
+	cursor:pointer;
+	height:29px;
+}
+#menu li a:hover span{
+	display:block;
+	float:left;					
+	background:url(/resources/images/menu_007_right_h.gif) no-repeat right;
+	color:#fff;
+	height:29px;
+}
+#menu li a.current{
+	display:block;
+	float:left;
+	height:29px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:bold;
+	background:url(/resources/images/menu_007_left_h.gif) no-repeat left;
+	line-height:26px;
+	padding:0 2px 0 7px;
+	cursor:pointer;
+	text-decoration:none;
+}
+#menu li a.current span{					
+	display:block;
+	float:left;
+	background:url(/resources/images/menu_007_right_h.gif) no-repeat right;
+	height:29px;
+	color:#fff;
+	line-height:26px;
+	cursor:pointer;
+	padding:0 14px 0 6px;
+}

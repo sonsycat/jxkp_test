@@ -1,0 +1,221 @@
+/*================================================*/
+/*  固定报表报表样式  */
+/*================================================*/
+
+/*固定列单元*/
+.fixedHeaderCol 
+{
+    /*BORDER:.5PT SOLID #33B2D2;*/
+    /*border-top:none;*/
+    /*font-size: 12PX;*/
+    word-break:break-all;
+    cursor: default;
+    OVERFLOW: hidden; 
+    CURSOR: hand; 
+    /*background-color:#CCE6F5;*/
+    position:relative; 
+    left:expression(this.parentElement.offsetParent.scrollLeft);
+}
+
+
+/*固定列单元(用于表头固定列)*/
+.fixedHeaderCol2 
+{
+    BACKGROUND:#60BCE1; 
+    FONT-SIZE:12PX; 
+    FONT-FAMILY: "Tahoma", "宋体", "Verdana"; 
+    COLOR:#FFFFFF; 
+    TEXT-ALIGN:CENTER;
+    VERTICAL-ALIGN:MIDDLE;
+    BORDER:.5PT SOLID #33B2D2;
+    border-top:none;
+    border-left:none;
+    TEXT-DECORATION:NONE;
+    font-size: 12PX;
+    word-break:break-all;
+    cursor: default;
+    OVERFLOW: hidden; 
+    CURSOR: hand; 
+    background-color:#60BCE1;
+    position:relative; 
+    left:expression(this.parentElement.offsetParent.scrollLeft);
+}
+
+.GO_LIST_HEAD_TD{ 
+    BACKGROUND:#60BCE1; 
+    FONT-SIZE:12PX; 
+    FONT-FAMILY: "Tahoma", "宋体", "Verdana"; 
+    COLOR:#FFFFFF; 
+    TEXT-ALIGN:CENTER;
+    VERTICAL-ALIGN:MIDDLE;
+    BORDER:.5PT SOLID #33B2D2;
+    border-top:none;
+    border-left:none;
+    FONT-STYLE:NORMAL;
+    TEXT-DECORATION:NONE;
+}
+/*固定行*/
+.fixedHeaderTr 
+{
+	/*z-index:10;*/
+	position:relative;
+	top:expression(this.offsetParent.scrollTop);
+	/*font-size: 9pt;*/
+	/*word-break:break-all;*/
+	BACKGROUND: #FFFFFF;
+	OVERFLOW-X: hidden;
+	/*CURSOR: hand; */
+}
+
+
+/*固定行,基数行*/
+.fixedHeaderTr-odd
+{
+	position:relative;
+	top:expression(this.offsetParent.scrollTop);
+	BACKGROUND: #FFFFFF;
+	
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding: 3px;
+	background-color: #FFFFFF;
+	height: 22px;
+	cursor: hand;	
+}
+
+
+/*固定行,偶数行*/
+.fixedHeaderTr-even
+{
+	position:relative;
+	top:expression(this.offsetParent.scrollTop);
+	BACKGROUND: #FFFFFF;
+	
+	
+    border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding: 3px;
+	background-color:#F7f3ff;
+	height: 22px;
+	cursor: hand;
+}
+
+/*非固定行*/
+.fixedHeaderTr1
+{
+    border-top:none;
+    position:relative; 
+    z-index:-1;
+    word-break: break-all;
+    OVERFLOW: hidden; 
+    CURSOR: hand; 
+}
+
+/*固定表头*/
+.GO_LIST_HEAD{ 
+
+    BACKGROUND:"#FFFFCC";
+    COLOR:#FFFFFF;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Tahoma", "宋体", "Verdana";
+    HEIGHT: 26px;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+    TEXT-DECORATION: none;
+    z-index:1;
+    position:relative  ;
+    top:expression(this.offsetParent.scrollTop);
+    word-break:break-all;
+    OVERFLOW: hidden  ; 
+    CURSOR: hand;
+	
+}
+/* 列表的基数行 td */
+.GO-LIST-ODD {
+    BORDER-TOP-WIDTH: 1PX;
+    BORDER-TOP-STYLE: SOLID;
+    BORDER-TOP-COLOR: #CCCCCC;
+    PADDING: 3PX;
+    BACKGROUND-COLOR: #FFFFFF;
+    CURSOR: HAND;
+    FONT-SIZE:12PX; 
+    FONT-FAMILY: "Tahoma", "宋体", "Verdana"; 
+    TEXT-ALIGN:CENTER;
+    VERTICAL-ALIGN:MIDDLE;
+    HEIGHT: 26PX;
+}
+/* 列表的偶数行 td */
+.GO-LIST-EVEN {
+    BORDER-TOP-WIDTH: 1PX;
+    BORDER-TOP-STYLE: SOLID;
+    BORDER-TOP-COLOR: #CCCCCC;
+    PADDING: 3PX;
+    BACKGROUND-COLOR: #F7F3F7;
+    CURSOR: HAND;
+    FONT-SIZE:12PX; 
+    FONT-FAMILY: "Tahoma", "宋体", "Verdana"; 
+    TEXT-ALIGN:CENTER;
+    VERTICAL-ALIGN:MIDDLE;
+    HEIGHT: 26PX;
+}
+
+/* 列表的选中行 td */
+.GO-LIST-SELED {
+    BORDER-TOP-WIDTH: 1PX;
+    BORDER-TOP-STYLE: SOLID;
+    BORDER-TOP-COLOR: #CCCCCC;
+    PADDING: 3PX;
+    BACKGROUND-COLOR: #EFFFFF;
+    HEIGHT: 22PX;
+}
+/*
+
+A:HOVER {
+    BACKGROUND:#CCCCFF;
+}
+*/
+
+/*定义表头固定的列表区域*/
+.mainDiv { 
+	overflow:auto; 
+	height:expression((document.body.clientHeight-this.offsetTop-20>this.children[0].offsetHeight)?(this.children[0].offsetHeight+20) : (document.body.clientHeight-this.offsetTop-20)); 
+	width:expression(document.body.clientWidth-20);
+  scrollbar-face-color : EEF0FD; 
+}
+
+
+
+
+
+
+
+/*
+	新样式
+*/
+
+.GO_LIST_HEAD_ROWFIXED
+{ 
+    BORDER-COLLAPSE: separate;
+    
+    BORDER:.5PT SOLID #33B2D2;
+    border-top:none;
+    border-left:none;
+    
+    BACKGROUND:#DEDEFF;
+    COLOR:#000000;
+
+    HEIGHT: 24px;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+    TEXT-DECORATION: none;
+    
+    z-index:0;
+    position:relative; 
+    top:expression(this.offsetParent.scrollTop);
+    OVERFLOW: hidden; 
+    
+    CURSOR: hand; 
+}

@@ -1,0 +1,144 @@
+BODY{
+	background-image:url(../images/LeftMenuBg.gif) ;
+	margin:0 0 0 0 ;
+	font-size:12px ;
+}
+
+td{
+	line-height:18px ;
+	font-size:12px ;
+}
+
+.MenuLevel1{
+	font-size:14px ;
+	color:#0d6583;
+	height:28 ;
+	cursor:hand ;
+}
+
+.SelectedMenuLevel1{
+	font-size:12px ;
+	color:#ccffff;
+	height:28 ;
+	cursor:hand ;
+	padding-left:12px;
+	background-image:url(../images/LeftMenuButtonBg1_Select.gif);
+}
+
+.MenuLevel2{
+	font-size:12px ;
+	color:#000000;
+	background-color:#E7F3FF ;
+	height:25px ;
+	padding-top:3px ;
+	padding-left:12px;
+}
+
+.SelectedMenuLevel2{
+	font-size:12px ;
+	color:#000000;
+	background-color:#ffffff;
+	height:25px ;
+	padding-top:3px ;
+	padding-left:12px;
+}
+
+.MenuLevel3{
+	font-size:12px ;
+	color:#000000;
+	background-color:#E7F3FF;
+	height:20px ;
+	padding-top:3px ;
+	padding-left:12px;
+}
+
+.SelectedMenuLevel3{
+	font-size:12px ;
+	color:#000000;
+	background-color:yellow;
+	height:20px ;
+	padding-top:3px ;
+	padding-left:12px;
+}
+
+.MenuLevel4{
+	font-size:12px ;
+	color:#336398 ;	
+	background-color:#D1DAEA ;
+	//E0E0DA
+	height:18px ;
+	padding-top:3px ;
+	padding-left:30px;
+}
+
+.SubMenuLayer{
+	display:'' ;
+	cursor:hand ;
+}
+
+.SubMenuLayerHidden{
+	display:'none' ;
+	cursor:hand ;
+}
+
+.oprName{
+	position : absolute ;
+	left : 0 ;
+	top : 1000px ; 
+	width : 109 ; 
+	z-index : 10 ;
+	line-height : 20px ; 
+	font-size : 12px ;
+	background-color : #887868 ;
+	color : #ffffff ;
+	border : none ;
+	text-align : left ;
+	display:'';
+}
+
+.oprName_hidden{
+	position : absolute ;
+	left : 0 ;
+	top : 1000px ; 
+	width : 109 ; 
+	z-index : 10 ;
+	line-height : 20px ; 
+	font-size : 12px ;
+	background-color : #887868 ;
+	color : #ffffff ;
+	border : none ;
+	text-align : left ;
+	display:none;
+}
+
+.oprName1{
+	position : absolute ;
+	right : 0 ;
+	bottom : 1000px ; 
+	width : 12 ; 
+	z-index : 10 ;
+	line-height : 12px ; 
+	font-size : 12px ;
+	background-color : #887868 ;
+	color : #ffffff ;
+	border : none ;
+	text-align:center;
+	padding-top:6px;
+	display:'';
+}
+
+.oprName1_hidden{
+	position : absolute ;
+	right : 0 ;
+	bottom : 1000px ; 
+	width : 12 ; 
+	z-index : 10 ;
+	line-height : 12px ; 
+	font-size : 12px ;
+	background-color : #887868 ;
+	color : #ffffff ;
+	border : none ;
+	text-align:center;
+	padding-top:6px;
+	display:none;
+}

@@ -1,0 +1,91 @@
+body {
+	font-family:SimHei,verdana,tahoma,arial,verdana,sans-serif
+	font-size:12px;
+}
+p {
+	margin:12px 0;
+}
+a {
+	color:#ffcc33;
+}
+.key {
+	text-decoration:underline;
+}
+input,
+textarea {
+	font-family:verdana,tahoma,arial,verdana,sans-serif;
+	font-size:12px;
+	padding:3px;
+}
+.qo-abs-position {
+	position:absolute;
+}
+#qo-login-panel {
+	background:url(../images/bg-panel.jpg) no-repeat;
+	border:0px solid #000108;
+	height:560px;
+	width:810px;
+	color:#ffffff;
+}
+.qo-login-logo {
+	height:130px;
+	left:40px;
+	top:40px;
+	width:580px;
+	font-size:32px;
+	font-family:SimHei,verdana,tahoma,arial,verdana,sans-serif;
+}
+.qo-login-logo span{
+	font-size:18px;
+	font-family:SimHei,verdana,tahoma,arial,verdana,sans-serif;
+}
+.qo-login-benefits {
+	left:52px;
+	top:175px;
+	width:300px;
+	font-size:18px;
+}
+.qo-login-supported {
+	left:600px;
+	top:35px;
+}
+.qo-login-signup {
+	color:#000;
+	left:465px;
+	top:460px;
+}
+.qo-login-forgot {
+	color:#AA0000;
+	left:465px;
+	top:420px;
+}
+.qo-login-forgot a{
+	color:#fff;
+	left:470px;
+	top:480px;
+}
+#field1-label {
+	left:450px;
+	top:300px;
+	font-size:18px;
+    color:#333;
+
+}
+.field1 {
+	left:540px;
+	top:298px;
+	width:200px;
+}
+#field2-label {
+	left:470px;
+	top:335px;
+  font-size:18px;
+        color:#333;
+
+}
+.field2 {
+	left:540px;
+	top:333px;
+	width:200px;
+}
+

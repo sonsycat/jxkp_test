@@ -1,0 +1,739 @@
+/*================================================*/
+/*   设定主页面的一些属性     */
+/*================================================*/
+BODY{
+   margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: 宋体;
+	font-size: 12px;
+	color: #333333;
+	background-image: url(../images/bg.jpg);
+   
+	
+	 SCROLLBAR-FACE-COLOR: #ccccff;
+    SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+    SCROLLBAR-SHADOW-COLOR: #BDDCF0;
+    SCROLLBAR-ARROW-COLOR: #ffffff;
+    SCROLLBAR-TRACK-COLOR: #e6e6fa;
+    SCROLLBAR-DARKSHADOW-COLOR: #BDDCF0;
+    SCROLLBAR-BASE-COLOR: #ccccff;
+}
+
+HR {
+	color: #527DBD;
+}
+
+SPAN {
+    /*overflow:hidden*/
+}
+
+/*================================================*/
+/*  设定FORM的属性 */
+/*================================================*/
+INPUT, TEXTAREA, SELECT, BUTTON{
+	/*border:expression(((type!='radio')&(type!='checkbox'))?'1px solid #CEDBEF':'');*/
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体", "Tahoma", "Verdana";
+    /*color: #000000;*/
+	/*BACKGROUND-COLOR:expression(((type!='radio')&(type!='checkbox'))?'#FFFFFF':'');*/
+    /*	BACKGROUND-COLOR:expression(((type!='radio')&(type!='checkbox'))?'#E9EFF5':''); */
+}
+
+/* 提交按钮 */
+INPUT.Submit{
+	border:1px solid #C1DBF5;
+	BORDER-RIGHT: #C1DBF5 1px solid;
+	BORDER-TOP: #C1DBF5 1px solid;
+	FONT-SIZE: 14px;
+	BORDER-LEFT: #C1DBF5 1px solid;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #C1DBF5 1px solid;
+	FONT-FAMILY: "Verdana";
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: #D5E4F3;
+	font-color: #000000
+}
+
+/*================================================*/
+/*  设定Tabble的属性 */
+/*================================================*/
+
+/* 标准表格属性 */
+TABLE, TR{
+	FONT-FAMILY: "Tahoma", "宋体", "Verdana";
+    FONT-SIZE: 12px;
+}
+
+
+/*================================================*/
+/*  主导航，副导航 页面元素属性  */
+/*================================================*/
+
+/* 页面顶部框架 */
+.gs-pagetopframe {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6DBEF;
+}
+
+.gs-bannerframename {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 0px;
+	BACKGROUND-COLOR: #001860;
+	BACKGROUND-IMAGE: url(../images/bg02.jpg);
+	BACKGROUND-REPEAT: repeat-x;
+	font-weight: bold;
+	FONT-SIZE: 10px;
+	color:#0d6583;
+	
+}
+
+/* 页面主导航 */
+.gs-bannerframe {
+	PADDING-RIGHT: 14px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 0px;
+	BACKGROUND-COLOR: #001860;
+	BACKGROUND-IMAGE: url(../images/bg02.jpg);
+	BACKGROUND-REPEAT: repeat-x;
+	font-weight: bold;
+	FONT-SIZE: 14px;
+	color:#0d6583;
+	
+}
+
+.gs-bannerframe A, A:hover {
+	color:#0d6583; TEXT-DECORATION: none;
+}
+
+.gs-bannerframe-sel {
+	COLOR: #FFCCFF;
+}
+.gs-bannerframe-sel A, A:hover {
+	COLOR: Blue; TEXT-DECORATION: none;
+}
+
+
+/* 页面标题 */
+.gs-pagetitle {
+	COLOR: #0d6583;
+	/*FONT-WEIGHT: bold; */
+	FONT-SIZE: 22px; 
+	font-family: "华文行楷";
+}
+.fixHeaderStyle {
+
+font-size: 9pt;
+
+vertical-align: middle;
+
+text-transform: capitalize;
+
+font-family: "Arial" , "Helvetica" , "sans-serif";
+
+height: 23px;
+
+background-color: #b8ccff;
+border-color:#b8ccff
+
+
+
+text-align: center;
+
+text-decoration: none;
+
+POSITION: relative; 
+
+TOP: expression(this.offsetParent.scrollTop-2)
+
+}
+
+/*
+.gs-pagetitle A {
+	COLOR: #131FA5; TEXT-DECORATION: none;
+}
+
+.gs-pagetitle A:hover {
+	COLOR: #FF0000; TEXT-DECORATION: none;
+}
+*/
+
+
+
+.MenuLevel1{
+	BORDER-RIGHT: medium none;
+	BACKGROUND: #ffffff;
+	BORDER-LEFT: 0px;
+	BORDER-RIGHT: #d2dbed 1px solid;
+	BORDER-LEFT: 0px;
+	font-size: 15px;
+	font-weight: bold;
+	color:#0d6583;
+}
+
+
+
+
+/* 副导航菜单 */
+/*
+.gs-navframe
+{
+	font-size: 14px;
+	BORDER-RIGHT: medium none;
+	BACKGROUND: #99ccff;
+	BORDER-LEFT: 0px;
+	BORDER-RIGHT: #d2dbed 1px solid;
+	BORDER-LEFT: 0px;
+	color:#0d6583;
+}
+
+.gs-navframe A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+
+
+.gs-navframe A:hover {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+*/
+
+/* 副导航子项和被选中的子项 */
+
+/*
+.gs-navitem A,A:hiver 
+{
+	color:#0d6583; TEXT-DECORATION: none;
+	font-size:14px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+    padding-left: 10px;
+	background-image: url(../images/rtbullet1.gif);
+}
+
+.gs-navitemseled A,A:hiver  
+{
+	COLOR: Red; TEXT-DECORATION: none;
+	border: 0px solid #2254b1;
+	background-color: #FFFFFF;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 2px;
+}
+
+.no
+{
+}
+
+*/
+
+/* 副导航菜单 */
+.gs-navframe{
+	background-color:#C7D7EC;
+border-bottom:solid #999999 1px;
+border-right:solid #AAB8BD 1px;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #616161; text-align:center;
+}
+
+
+.gs-navframe A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+
+
+.gs-navframe A:hover {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+
+
+/* 副导航节标题 */
+
+.gs-navtitle {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 3px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #001860;
+	padding-top: 12px;
+
+}
+
+/* 副导航子项和被选中的子项 */
+
+.gs-navitem, .gs-navitemseled{
+	COLOR: #2254b1;TEXT-DECORATION: none;
+	padding-left: 10px;
+	background-repeat: no-repeat;
+}
+.gs-navitem 
+{
+	COLOR: #2254b1;TEXT-DECORATION: none;
+	padding-top: 3px;TEXT-DECORATION: none;
+	padding-bottom: 3px;
+	background-image: url(../images/rtbullet.gif);
+}
+.gs-navitemseled {
+	border: 0px solid #2254b1;TEXT-DECORATION: none;
+	background-color: #FFFFFF;
+	padding-top: 1px;
+	padding-bottom: 2px;
+}
+
+.no
+{
+}
+
+/*================================================*/
+/* 主页面元素属性  */
+/*================================================*/
+/* 页面体框架 */
+.gs-mainbody {
+	padding: 4px;
+}
+
+/* 页面主表格框架 */
+.gs-maintab {
+	padding: 2px;
+}
+
+/* 页面按钮及导航条 */
+.gs-mainbar {
+	background-image: url(../images/home_search_yellow.gif);
+	border: 0px solid #94B6F7;
+	/*height: 24px;*/
+	width: 100%;
+	background-repeat: repeat-x;
+	/*background-color: #E7EFFF;*/
+	BACKGROUND-POSITION: left bottom;
+}
+
+/*================================================*/
+/*  录入区域及列表显示区域的相关样式  */
+/*================================================*/
+
+/* 录入节分割线 ，合并成一个td，中间不要有任何字符 td */
+/* 2为页末的分割线 */
+.gs-input-separator {
+	background-color: #2155B5;
+	height: 1px;
+}
+.gs-input-separator2 {
+	background-color: #2155B5;
+	height: 2px;
+}
+
+/* 录入标题区 td */
+.gs-input-title {
+	font-size: 12pt;
+	color: #003399;
+	font-weight: bold;
+	padding: 4px;
+	height: 24px;
+}
+
+/* 录入说明区 td */
+.gs-input-desc {
+	font-size:10pt;
+	font-weight:normal;
+	color:#444444;
+
+}
+
+/* 录入区 td */
+.gs-input-area {
+	background-color: #F7F3F7;
+	padding: 3px 3px 3px 6px;
+}
+
+/* 录入区和列表显示区的外套tab tab*/
+.gs-input-tab {
+	padding: 0px;
+}
+
+/* 录入区每一录入字段占用节的TD (用来加大字段和字段间的距离)*/
+.gs-input-section {
+	padding-top: 4px;
+	padding-bottom: 6px;
+	FONT-FAMILY: "Tahoma", "宋体";
+}
+
+/* 确定按钮  input:button,submit */
+.gs-input-button {
+	width: 90px;
+	height: 26px;
+	font-size: 101%;
+	font-family: "Tahoma", "新宋体";
+}
+
+/* 录入框  input:text */
+.gs-input-text {
+	width: 90%;
+}
+
+/* 列表表格，放在gs-input-tab表格中，作为一个列表显示  tab */
+.gs-list-tab {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	padding: 2px;
+}
+
+/* 列表表头  td */
+.gs-list-head {
+	padding:4
+}
+/*
+.gs-list-head A {
+	 #000000;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #2254b1;
+}
+.gs-list-head A:hover {
+	COLOR: #000000;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+*/
+
+/* 列表的基数行 td */
+.gs-list-odd {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ece9d8;
+	background-color: #FFFFFF;
+	height:28;
+	cursor: hand;
+}
+.gs-list-old {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #ece9d8;
+	background-color: #e6e6fa;
+	height:28;
+	cursor: hand;
+}
+
+/* 列表的偶数行 td */
+.gs-list-even {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	background-color: #F7F3F7;
+	cursor: hand;
+}
+
+/* 列表的基数行 td */
+.gs-list-all {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	background-color: #FFFFFF;
+	cursor: hand;
+}
+
+
+/* 列表的选中行 td */
+.gs-list-seled {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	background-color: #EFFFFF;
+}
+
+/* 列表的翻页导航区，放在列表的最末行，合并成一个单元格  */
+/* 见例子 */
+.gs-list-showpage {
+	font-weight: bold;
+	padding: 4px;
+	color: #CE6531;
+	text-align: right;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+
+/* 中间部分页面导航条tab  tab */
+.gs-mainbar-tab {
+	padding-right: 1px;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 2px;
+	border-collapse: collapse;
+	height:29;
+	clear: 0;
+	background-image:url('../images/im/c_top01.jpg');
+	border-color: #ece9d8
+}
+
+.fixHeaderStyle {
+
+font-size: 9pt;
+
+vertical-align: middle;
+
+text-transform: capitalize;
+
+font-family: "Arial" , "Helvetica" , "sans-serif";
+
+height: 23px;
+
+background-color: #b8ccff;
+border-color:#b8ccff
+
+
+
+text-align: center;
+
+text-decoration: none;
+
+POSITION: relative; 
+
+TOP: expression(this.offsetParent.scrollTop-2)
+
+}
+/*
+.gs-mainbar-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-mainbar-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+/* left页面导航条tab  tab */
+.gs-mainbar-left02 {
+	padding-right: 1px;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 6px;
+	border-collapse: collapse;
+	clear: 0;
+	background-color: #e5f7f8;
+	border-color: #ffffff;
+	border-left:#ffffff;
+	border-right:#ffffff;
+	border-top-color:#ffffff;
+}
+
+.gs-mainbar-left02  A{
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-mainbar-left02 A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+
+/* 负责选中一行或几行的rodio或checkbox按钮  input:radio|checkbox */
+.gs-list-selbtn {
+	padding: -3px;
+	height: 12px;
+	width: 16px;
+}
+INPUT.gs-list-gopage-input {
+	width: 20px;
+	text-align: right;
+	border-top: 0px solid #CC33CC;
+	border-right: 0px solid #CC33CC;
+	border-bottom: 1px solid #CC33CC;
+	border-left: 0px solid #CC33CC;
+}
+.gs-main-sub-title {
+	background-image: url(/images/partgrad.gif);
+	background-repeat: repeat-x;
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #003399;
+	padding-left: 5px;
+	height: 18px;
+	background-color: #b9d1f4;
+	padding-top: 3px;
+	padding-bottom: 1px;
+}
+.gs-main-sub-tab {
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+/*按钮样式*/
+.botton-style
+{
+	background-color:Transparent;
+	border-style:none;
+	height:15px;
+	width:25px;
+	color:#2254b1;
+}
+
+/*文本录入框样式*/
+.gs-text-style
+{
+	border-color:Gray;
+	border-width:1px;
+	border-style:double	
+}
+
+.CLK_COL
+{
+    CURSOR: hand; 
+    
+    BACKGROUND-IMAGE: url(../images/clickbag.gif); 
+    BACKGROUND-POSITION: 100% 100%;
+    BACKGROUND-REPEAT:NO-REPEAT; 
+}
+/* 中间部分页面导航条tab  tab */
+.gs-c-tab {
+	padding-right: 1px;
+	text-align: left;
+	color: #000000;
+	vertical-align: middle;
+	padding-left: 5px;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-color: #ffffff;
+	border-color: #ece9d8;
+}
+/*
+.gs-c-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+/* 中间部分页面导航条tab  tab */
+.gs-c2-tab {
+	padding-right: 1px;
+	text-align:center;
+	color: #000000;
+	vertical-align: middle;
+	padding-left: 5px;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-color: #eff6f5;
+	border-color: #ece9d8;
+}
+/*
+.gs-c2-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c2-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+/* 中间部分页面导航条tab  tab */
+.gs-c3-tab {
+	padding-right: 1px;
+	text-align:left;
+	color: #000000;
+	vertical-align: middle;
+	padding-left: 5px;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-color: #eff6f5;
+	border-color: #ece9d8;
+}
+/*
+.gs-c3-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c3-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+/* 中间部分页面导航条tab  tab */
+.gs-c4-tab {
+	padding-right: 1px;
+	text-align:center;
+	color: #000000;
+	vertical-align: middle;
+	padding-left: 5px;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-color: #e3fafb;
+	border-color: #ece9d8;
+}
+/*
+.gs-c4-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c4-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+
+/* 中间部分页面导航条tab  tab */
+.gs-c5-tab {
+	padding-right: 1px;
+	text-align:right;
+	color: #000000;
+	vertical-align: middle;
+	padding-left: 5px;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-color: #eff6f5;
+	border-color: #ece9d8;
+}
+/*
+.gs-c5-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c5-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+/* 中间部分页面导航条tab  tab */
+.gs-c6-tab {
+	padding-right: 1px;
+	text-align: center;
+	color:000000;
+	vertical-align: middle;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-color: #ffffff;
+	border-color: #ece9d8;
+}
+/*
+.gs-c6-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c6-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/
+
+/* 中间部分页面导航条tab  tab */
+.gs-c_top-tab {
+	padding-right: 1px;
+	text-align:center;
+	vertical-align: middle;
+	padding-left: 5px;
+	border-collapse: collapse;
+	height:28;
+	clear: 0;
+	background-image: url('../images/im/dtop001.gif')
+}
+/*
+.gs-c_top-tab A {
+	COLOR: #2254b1; TEXT-DECORATION: none;
+}
+.gs-c_top-tab A:hover {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+*/

@@ -1,0 +1,84 @@
+.ms-ptabarea {
+	MARGIN-TOP: 4px
+}
+
+.ms-ptabln {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabln.gif"); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-ptablnb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tablnb.gif"); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+
+.ms-ptablf {
+	BACKGROUND-IMAGE: url("../images/tabimg/tablf.gif"); BACKGROUND-REPEAT: repeat-y; 
+}
+.ms-ptablfb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tablfb.gif"); BACKGROUND-REPEAT: repeat-y; 
+}
+
+.ms-ptabrn {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabrn.gif"); BACKGROUND-REPEAT: repeat-y
+}
+.ms-ptabrnb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabrnb.gif"); BACKGROUND-REPEAT: repeat-y
+}
+
+.ms-ptabrf {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabrf.gif"); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-ptabrfb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabrfb.gif"); BACKGROUND-REPEAT: repeat-y
+}
+
+.ms-ptabcn {
+	BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #b4b4b4 1px solid; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffffff 0px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #ffffff 0px solid; FONT-STYLE: normal; FONT-FAMILY: 宋体,Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+}
+.ms-ptabcn A:link {
+	COLOR: #595959; FONT-STYLE: normal; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+.ms-ptabon A:visited {
+	COLOR: #595959; FONT-STYLE: normal; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+.ms-ptabcn A:hover {
+	COLOR: #ff0000; FONT-STYLE: normal; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+.ms-ptabcnb {
+	BACKGROUND-COLOR: #ffffff
+}
+
+.ms-ptabcf {
+	BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #b4b4b4 1px solid; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffffff 0px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #ffffff 0px solid; FONT-STYLE: normal; FONT-FAMILY: 宋体,Verdana, Arial, Helvetica; BACKGROUND-COLOR: #d9e3e6; TEXT-ALIGN: left
+}
+.ms-ptabcf A:link {
+	COLOR: #595959; FONT-STYLE: normal; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+.ms-ptaboff A:visited {
+	COLOR: #595959; FONT-STYLE: normal; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+.ms-ptabcf A:hover {
+	COLOR: #ff0000; FONT-STYLE: normal; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+.ms-ptabcfb {
+	BACKGROUND-COLOR: #b4b4b4
+}
+
+.ms-ptabmff {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabmff.gif"); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-ptabmffb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabmffb.gif"); BACKGROUND-REPEAT: repeat-y;
+}
+
+.ms-ptabmfn {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabmfn.gif"); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-ptabmfnb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabmfnb.gif"); BACKGROUND-REPEAT: repeat-y;
+}
+
+.ms-ptabmnf {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabmnf.gif"); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-ptabmnfb {
+	BACKGROUND-IMAGE: url("../images/tabimg/tabmnfb.gif"); BACKGROUND-REPEAT: repeat-y;
+}

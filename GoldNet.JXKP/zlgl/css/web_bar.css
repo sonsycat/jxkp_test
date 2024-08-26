@@ -1,0 +1,111 @@
+.bigicon {
+	line-height: 30px;
+	overflow: hidden;
+}
+body {
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	MARGIN: 0;
+}
+/*
+div {
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 0px solid #FFFFFF;
+}
+*/
+td {
+	border: 0px solid #FFFFFF;
+	font-family: "Tahoma", "Verdana", "sans-serif";
+	font-size: 12px;
+}
+tbody {
+	border: 0px solid #FFFFFF;
+	font-family: "Tahoma", "Verdana", "sans-serif";
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+.table1 {
+	border: 0px solid #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Tahoma", "Verdana", "sans-serif", "ËÎÌו";
+	font-size: 12px;
+	vertical-align: middle;
+}
+/*
+.linkarer{
+	line-height: 30px;	
+}
+*/
+/*
+a {
+	text-decoration: none;
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+	clear: none;
+}
+*/
+/*
+a:link {
+	border: 0px none;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip:  rect(0px 0px 0px 0px);
+	cursor: hand;
+	color: #000000;
+	font-family: "Tahoma", "Verdana", "sans-serif";
+	font-size: 11px;
+}
+a:visited {
+	color: #000000;
+}
+a:active {
+	color: #000000;
+}
+a:hover {
+	color: #000000;
+}
+*/
+.wbtitle {
+	cursor: hand;
+}
+.img {
+	vertical-align: center;
+}
+.up {
+	font-weight: bold;
+	cursor: hand;
+}
+.up1 {
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #FFFFFF;
+}
+.butup{
+	position:relative;
+	overflow:hidden;
+	height:16px;
+	width:16px;
+	border: 0px;
+	cursor: hand;
+	background-image: url("/images/arrow_up.gif");
+}
+.butdown{
+	position:relative;
+	overflow:hidden;
+	height:16px;
+	width:16px;
+	border: 0px;
+	cursor: hand;
+	background-image: url("/images/arrow_down.gif");
+}
+.notup{
+	line-height: 80px;
+}

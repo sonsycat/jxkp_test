@@ -1,0 +1,30 @@
+tr.oldstyle {
+	BACKGROUND-COLOR: #ffffff; 
+	CURSOR: hand; 
+}
+tr.oldstyle A {
+	COLOR: #000000;
+}
+tr.oldstyle A:hover {
+	COLOR: #000000;
+}
+
+tr.newstyle {
+	BACKGROUND-COLOR: lavender; 
+	CURSOR: hand; 
+	/*COLOR: #ffffff;*/
+}
+tr.newstyle A {
+	COLOR: #ffffff;
+}
+tr.newstyle A:hover {
+	COLOR: #ffffff;
+}
+
+.HeadRow
+{
+	background-image:url(../images/TableHeaderBg.gif) ;
+	height:23px ;
+	font-family: "ËÎÌו";
+	font-size:12px ; 
+}
